@@ -173,6 +173,10 @@
   }
 
   @include respond-to('sm') {
-    height: clamp(520px, 78vh, 640px);
+    height: clamp(700px, 78vh, 700px);
+
+    .hero__bg {
+      background-position: 70%;
+    }
   }
 }
