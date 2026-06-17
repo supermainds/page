@@ -1,0 +1,52 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.value-list {
+  @include container;
+  margin-top: $spacing-2xl;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 60px 1fr 1.5fr;
+    gap: $spacing-lg;
+    padding-block: $spacing-lg;
+    border-bottom: 1px solid rgba($color-white, 0.15);
+    align-items: center;
+
+    @include respond-to('md') {
+      grid-template-columns: 48px 1fr;
+    }
+
+    &:first-child {
+      border-top: 1px solid rgba($color-white, 0.15);
+    }
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+
+    @include flex-center;
+    font-size: $font-size-3xl;
+  }
+
+  &__title {
+    font-size: $font-size-3xl;
+    text-transform: uppercase;
+    font-weight: $font-weight-light;
+    @include respond-to('md') {
+      grid-column: 2;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-base;
+    line-height: $line-height-relaxed;
+    color: rgba($color-white, 0.75);
+
+    @include respond-to('md') {
+      grid-column: 1 / -1;
+      padding-left: calc(48px + #{$spacing-lg});
+    }
+  }
+}

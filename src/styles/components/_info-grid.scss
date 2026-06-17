@@ -1,0 +1,137 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.info-grid {
+  @include container(1300px);
+  @include grid-columns(3, $spacing-lg);
+
+  @include respond-to('md') {
+    grid-template-columns: 1fr;
+  }
+
+  &--4 {
+    @include grid-columns(4, $spacing-md);
+
+    @include respond-to('md') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('sm') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    padding: $spacing-lg;
+    border: 1px solid $color-grey-200;
+    border-radius: $border-radius-md;
+    transition: border-color $transition-base, box-shadow $transition-base;
+
+    &:hover {
+      border-color: $color-primary;
+      box-shadow: $shadow-card;
+    }
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: $border-radius-sm;
+    color: $color-primary;
+    @include flex-center;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-lg;
+    margin-bottom: $spacing-md;
+  }
+
+  &__title {
+    @include heading-h4;
+    margin-bottom: $spacing-sm;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+  }
+
+  &__description {
+    font-size: $font-size-sm;
+    color: $color-grey-600;
+    line-height: $line-height-relaxed;
+    margin-bottom: $spacing-md;
+  }
+
+  &__link {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    color: $color-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__list{
+    list-style: disc;
+    padding-left: 20px;
+    li{
+      line-height: $spacing-lg;
+    }
+  }
+}
+
+.section--lab-experiments {
+  .section__header {
+    margin-bottom: $spacing-3xl;
+
+    @include respond-to('sm') {
+      margin-bottom: $spacing-xl;
+    }
+  }
+
+  .section-heading h2 {
+    max-width: 720px;
+    @include heading-h2;
+  }
+
+  .info-grid {
+    align-items: stretch;
+    gap: $spacing-lg;
+  }
+
+  .info-grid__card {
+    height: 100%;
+    min-height: 320px;
+    padding: $spacing-lg $spacing-lg;
+    border-color: $color-grey-400;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: none;
+
+    &:hover {
+      border-color: $color-primary;
+      box-shadow: none;
+    }
+  }
+
+  .info-grid__icon {
+    justify-content: flex-start;
+    width: auto;
+    height: 48px;
+  }
+
+  .info-grid__title {
+    @include heading-h4;
+    font-weight: $font-weight-regular;
+    text-transform: none;
+  }
+
+  .info-grid__description {
+    max-width: 22ch;
+    font-size: $font-size-base;
+    line-height: $line-height-relaxed;
+    color: $color-black;
+    margin-bottom: 0;
+  }
+}

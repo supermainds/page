@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+.u-flex { display: flex; }
+.u-flex-column { display: flex; flex-direction: column; }
+.u-align-center { align-items: center; }
+.u-align-start { align-items: flex-start; }
+.u-gap-sm { gap: $spacing-sm; }
+.u-gap-md { gap: $spacing-md; }
+
+.u-mt-sm { margin-top: $spacing-sm; }
+.u-mt-md { margin-top: $spacing-md; }
+.u-mt-lg { margin-top: $spacing-lg; }
+.u-mt-2xl { margin-top: $spacing-2xl; }
+.u-mb-sm { margin-bottom: $spacing-sm; }
+.u-mb-md { margin-bottom: $spacing-md; }
+.u-pt-lg { padding-top: $spacing-2xl; }
+
+.icon-18 { width: 18px; height: 18px; }
+.icon-24 { width: 24px; height: 24px; }
+.icon-36 { width: 36px; height: 36px; }
+
+.u-uppercase { text-transform: uppercase; }
+.u-letter-spaced { letter-spacing: 0.12em; }
+.u-bold { font-weight: $font-weight-bold; }

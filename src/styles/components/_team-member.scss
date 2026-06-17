@@ -1,0 +1,96 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.team-member {
+  @include container-wide;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-lg;
+  align-items: center;
+  padding-block: $spacing-xl;
+
+  @include respond-to('md') {
+    grid-template-columns: 1fr;
+    gap: $spacing-xl;
+  }
+
+  &--reverse {
+    .team-member__photo-wrap {
+      order: 2;
+
+      @include respond-to('md') {
+        order: 0;
+      }
+    }
+
+    .team-member__bio {
+      order: 1;
+      text-align: right;
+
+      @include respond-to('md') {
+        order: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  &__photo-wrap {
+    position: relative;
+    background: $color-primary;
+    border-radius: 28px;
+    min-height: 280px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  &__photo {
+    width: 100%;
+    max-width: 420px;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  &__name {
+    @include heading-h3;
+    font-weight: $font-weight-black;
+    text-transform: uppercase;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__role {
+    font-size: $font-size-xs;
+    color: $color-primary;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__bio {
+    max-width: 520px;
+    font-size: $font-size-sm;
+    line-height: $line-height-normal;
+    color: $color-black;
+
+    .team-member--reverse & {
+      justify-self: end;
+
+      @include respond-to('md') {
+        justify-self: start;
+      }
+    }
+  }
+}
+
+.section--team {
+  .section__header {
+    margin-bottom: $spacing-lg;
+  }
+
+  .section-heading h2 {
+    @include heading-h2;
+  }
+}

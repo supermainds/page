@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "pretitle": "The Lab + Academia",
+    "title": ["DONDE EXPERIMENTAMOS ", { "highlight": "EL FUTURO." }],
+    "subtitle": "Nuestro Lab es un espacio de exploración sin restricciones. Aquí probamos las últimas tecnologías, rompemos cosas, y aprendemos qué funciona realmente antes de llevarlo a producción.",
+    "backgroundImage": "header_lab.png"
+  },
+  "experiments": {
+    "title": "EXPERIMENTOS ACTUALES.",
+    "items": [
+      {
+        "icon": "robot",
+        "title": "Agentes multi-modelo",
+        "description": "Combinando GPT-4, Claude y Gemini para resultados superiores"
+      },
+      {
+        "icon": "mapa_conceptual",
+        "title": "Workflows autónomos",
+        "description": "Integraciones con n8n, Make y Zapier para automatización avanzada"
+      },
+      {
+        "icon": "video",
+        "title": "Video avatares realistas",
+        "description": "Síntesis de voz e imagen para comunicación personalizada"
+      },
+      {
+        "icon": "cake",
+        "title": "RAG avanzado",
+        "description": "Grafos de conocimiento para recuperación de información precisa"
+      }
+    ]
+  },
+  "upskilling": {
+    "title": "PROGRAMAS DE UPSKILLING.",
+    "description": "Formamos equipos que usan IA con criterio y método. Creamos talleres de IA especializados por rol (estrategia, operaciones, datos, marketing, legal/compliance). Nuestros cursos son programas cortos con retos reales y rúbricas de dominio.",
+    "items": [
+      {
+        "icon": "person.svg",
+        "title": "AI Fundamentals",
+        "duration": "4 horas",
+        "audience": "Todos en la organización",
+        "description": "Desmitificamos la IA y enseñamos casos de uso prácticos."
+      },
+      {
+        "icon": "clock_yellow.svg",
+        "title": "Prompting Avanzado",
+        "duration": "8 horas",
+        "audience": "Equipos técnicos y operativos",
+        "description": "Tu equipo aprende a hablar el idioma de los LLMs para máxima productividad."
+      },
+      {
+        "icon": "book.svg",
+        "title": "IA aplicada para Empresarios",
+        "duration": "16 horas",
+        "audience": "Empresarios y directivos de empresa",
+        "description": "Cómo usar la IA para lograr mayores eficiencias y generar ingresos."
+      },
+      {
+        "icon": "graduation.svg",
+        "title": "IA para Marketing y Comunicación",
+        "duration": "12 horas",
+        "audience": "Líderes y profesionales de marketing",
+        "description": "Contenido, campañas, productividad y optimización de procesos con IA."
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Interesado en nuestros programas?",
+    "subtitle": "Solicita el catálogo completo de cursos y talleres.",
+    "buttonText": "Solicitar catálogo de cursos",
+    "buttonPath": "/#contacto"
+  }
+}

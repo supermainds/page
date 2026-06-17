@@ -1,0 +1,72 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.strategy-list {
+  @include container;
+  margin-top: $spacing-2xl;
+  border-top: 1px solid $color-grey-400;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: $spacing-xl;
+    padding-block: $spacing-lg;
+    border-bottom: 1px solid $color-grey-400;
+
+    @include respond-to('md') {
+      grid-template-columns: 80px 1fr;
+    }
+
+    @include respond-to('sm') {
+      grid-template-columns: 1fr;
+      gap: $spacing-md;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include respond-to('sm') {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  &__number {
+    @include process-row-number;
+  }
+
+  &__unit {
+    @include process-row-unit;
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.35fr);
+    gap: $spacing-xl;
+    align-items: center;
+
+    @include respond-to('md') {
+      grid-template-columns: 1fr;
+      gap: $spacing-md;
+    }
+  }
+
+  &__list {
+    @include process-row-list;
+  }
+
+  &__title {
+    @include process-row-title;
+  }
+
+  &__description {
+    font-size: $font-size-base;
+    color: $color-black;
+    line-height: $line-height-normal;
+  }
+}

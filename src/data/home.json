@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "title": ["AI PARA HUMANOS. IMPACTO EN ", { "highlight": "<90 DÍAS." }],
+    "subtitle": "Somos el acelerador de IA humana y ética para Latam. Diseñamos estrategia, construimos agentes y desarrollamos productos AI-first que generan resultados medibles en tiempo récord.",
+    "ctaText": "Agendar conversación",
+    "ctaPath": "#resultados"
+  },
+  "results": {
+    "title": ["MENOS", { "break": true }, "POWER POINTS.", { "break": true }, { "highlight": "MÁS RESULTADOS" }],
+    "intro": "Sabemos que has escuchado mucho sobre IA. Lo que hace la diferencia no es la promesa mágica, sino la ejecución disciplinada. Trabajamos con empresas que necesitan resultados reales, no reportes que terminan en un cajón.",
+    "features": [
+      {
+        "number": "01",
+        "icon": "person",
+        "title": "Transferencia real",
+        "description": "Hacemos enseñando. Cuando terminamos, tu equipo puede operar sin nosotros.",
+        "image": "transferencia.png"
+      },
+      {
+        "number": "02",
+        "icon": "rayo",
+        "title": "Valor en <90 días",
+        "description": "No creemos en proyectos eternos. Nuestro estándar es el impacto con agilidad.",
+        "image": "valor.png"
+      },
+      {
+        "number": "03",
+        "icon": "mapa_conceptual",
+        "title": "Ecosistema flexible",
+        "description": "Un ecosistema de partners especializados es más ágil que un headcount fijo.",
+        "image": "ecosistema.jpg"
+      }
+    ]
+  },
+  "comparison": {
+    "notBest": {
+      "title": ["CUÁNDO NO SOMOS ", { "highlight": "TU MEJOR OPCIÓN." }],
+      "description": "Seamos transparentes. Si ya tienes una idea muy clara de lo que quieres construir y solo necesitas manos para ejecutar, probablemente no somos el partner ideal para ti. Hay miles de fábricas de software que pueden hacerlo (y con gusto te recomendamos algunas).",
+      "items": [
+        "Buscas magia o polvo de unicornio con IA",
+        "No tienes presupuesto ni tiempo asignado para innovación",
+        "Quieres reemplazar equipos completos sin plan de transición",
+        "Tu organización no está lista para cambiar procesos",
+        "Buscas un vendor que haga todo y no pregunte"
+      ]
+    },
+    "perfectIf": {
+      "title": ["SOMOS PERFECTOS ", { "highlight": "SI..." }],
+      "description": "Por otro lado, si buscas un partner estratégico que combine pensamiento de negocio con ejecución técnica impecable, probablemente tengamos mucho de qué hablar.",
+      "items": [
+        "Quieres resultados medibles en menos de 90 días",
+        "Buscas transferencia de conocimiento, no dependencia",
+        "Tienes datos y procesos listos para optimizar con IA",
+        "Valoras la gobernanza y la adopción responsable",
+        "Necesitas un partner que hable negocio y tecnología"
+      ]
+    }
+  },
+  "valueProps": {
+    "title": ["TRADUCIMOS EL HYPE EN ", { "highlight": "VALOR TANGIBLE." }],
+    "backgroundImage": "hype.jpg",
+    "items": [
+      {
+        "icon": "01",
+        "title": "Eficiencia operativa",
+        "description": "Mi equipo pierde 40% del tiempo en tareas repetitivas que un agente podría hacer mejor"
+      },
+      {
+        "icon": "02",
+        "title": "Decisiones con datos",
+        "description": "Tenemos montañas de información pero no insights accionables para decidir rápido"
+      },
+      {
+        "icon": "03",
+        "title": "Adopción de IA",
+        "description": "Compramos herramientas de IA pero nadie las usa correctamente"
+      },
+      {
+        "icon": "04",
+        "title": "Gobernanza y riesgos",
+        "description": "Necesitamos innovar con IA pero sin comprometer ética, seguridad o compliance"
+      },
+      {
+        "icon": "05",
+        "title": "Productos AI-first",
+        "description": "Queremos crear servicios potenciados con IA pero no sabemos por dónde empezar"
+      }
+    ]
+  },
+  "workTogether": {
+    "title": ["TRES FORMAS DE ", { "highlight": "TRABAJAR JUNTOS." }],
+    "cards": [
+      {
+        "icon": "lightbulb",
+        "title": "AI Consulting & Upskilling",
+        "description": "Acompañamos la adopción estratégica de IA: desde el assessment de madurez hasta la gobernanza, pasando por el upskilling de equipos y la gestión del cambio.",
+        "image": "AI_cards.png",
+        "link": "/soluciones"
+      },
+      {
+        "icon": "robot",
+        "title": "Agentic AI & Automatización",
+        "description": "Diseñamos y operamos agentes que combinan datos propios, herramientas internas y flujos de trabajo para resolver tareas de negocio con eficiencias del 85%.",
+        "image": "agentic_cards.png",
+        "link": "/soluciones"
+      },
+      {
+        "icon": "cube",
+        "title": "Negocios, Productos y Servicios AI-First",
+        "description": "Co-creamos MVPs y productos digitales nativos de IA. Del discovery al lanzamiento en 12 semanas o menos.",
+        "image": "negocios_card.png",
+        "link": "/soluciones"
+      }
+    ]
+  },
+  "clients": {
+    "title": "CON QUIÉNES TRABAJAMOS",
+    "paragraphs": [
+      "Nuestros clientes generalmente prefieren ser discretos: esto significa no compartir el trabajo estratégico que hacemos con el mundo (y además con sus competidores). Es suficiente decir que abarcan las industrias de marketing, salud, banca, educación ejecutiva, retail y tecnología.",
+      "Hemos ayudado a organizaciones de 10 hasta 10,000 personas, a adoptar la IA de manera práctica y medible. Y sí, probablemente has escuchado de algunos de ellos."
+    ]
+  },
+  "contact": {
+    "title": ["HABLEMOS DE  ", { "highlight": "TU PRÓXIMO MOVIMIENTO CON IA." }],
+    "description": "No prometemos magia. Prometemos claridad en 30 minutos sobre qué puede hacer la IA por tu negocio hoy.",
+    "interests": [
+      "EMAIL",
+      "WHATSAPP",
+      "LLAMADA"
+    ],
+    "submitText": "Enviar mensaje"
+  }
+}

@@ -1,0 +1,23 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.section {
+  &__cta {
+    @include container;
+    display: flex;
+    gap: $spacing-md;
+    align-items: center;
+  }
+
+  &--agentes {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  &--mvp {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}

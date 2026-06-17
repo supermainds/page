@@ -1,0 +1,152 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.contact {
+  background: $color-grey-600;
+  color: $color-white;
+
+  &__inner {
+    @include container-wide;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: $spacing-3xl;
+
+    @include respond-to('md') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info {
+    h2{
+      max-width: 80%;
+    }
+    p {
+      line-height: $line-height-relaxed;
+      color: rgba($color-white, 0.85);
+    }
+
+    a {
+      color: $color-white;
+      font-weight: $font-weight-semibold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .section-heading{
+      margin-bottom: $spacing-xl;
+    }
+  }
+
+  &__details {
+    margin-top: $spacing-xl;
+    display: flex;
+    flex-direction: column;
+    font-size: $font-size-sm;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+    button.btn{
+      &:hover{
+        background: $color-primary;
+      }
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-md;
+
+    @include respond-to('sm') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+
+    label {
+      font-size: $font-size-xs;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba($color-white, 0.7);
+    }
+
+    input,
+    textarea {
+      background: rgba($color-white, 0.1);
+      border: 1px solid rgba($color-white, 0.2);
+      border-radius: $border-radius-sm;
+      padding: $spacing-sm;
+      color: $color-white;
+
+      &::placeholder {
+        color: rgba($color-white, 0.4);
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $color-primary;
+      }
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+  }
+
+  &__interests {
+    label {
+      font-size: $font-size-xs;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba($color-white, 0.7);
+      margin-bottom: $spacing-xs;
+      display: block;
+    }
+  }
+
+  &__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-xs;
+  }
+
+  &__chip {
+    padding: $spacing-xs $spacing-sm;
+    border: 1px solid rgba($color-white, 0.3);
+    border-radius: $border-radius-lg;
+    background: transparent;
+    color: $color-white;
+    font-size: $font-size-xs;
+    cursor: pointer;
+    transition: all $transition-base;
+
+    &--active,
+    &:hover {
+      background: $color-white;
+      color: $color-black;
+      border-color: $color-white;
+    }
+  }
+  &__schedule{
+    color: $color-white !important;
+    border: 1px solid $color-white;
+    background: none;
+    margin-bottom: 30px;
+    
+    &:hover {
+      background: $color-white;
+      color: $color-black !important;
+      border-color: $color-white;
+      text-decoration: none !important;
+    }
+  }
+}

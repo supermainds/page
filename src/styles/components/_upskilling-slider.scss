@@ -1,0 +1,149 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.upskilling-slider {
+  overflow: hidden;
+
+  &__header {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.9fr);
+    gap: $spacing-3xl;
+    align-items: start;
+    margin-bottom: $spacing-3xl;
+
+    .section-heading h2 {
+      max-width: 760px;
+      @include heading-h2;
+    }
+
+    p {
+      max-width: 58ch;
+      font-size: $font-size-base;
+      line-height: $line-height-relaxed;
+      color: $color-black;
+    }
+
+    @include respond-to('md') {
+      grid-template-columns: 1fr;
+      gap: $spacing-lg;
+    }
+  }
+
+  &__viewport {
+    overflow: visible;
+  }
+
+  &__track {
+    display: flex;
+    gap: $spacing-lg;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__card {
+    flex: 0 0 min(340px, calc((100% - #{$spacing-lg * 2}) / 3.2));
+    min-height: 360px;
+    padding: $spacing-2xl $spacing-lg $spacing-lg;
+    border: 1px solid $color-grey-400;
+    scroll-snap-align: start;
+
+    @include respond-to('md') {
+      flex-basis: calc((100% - #{$spacing-lg}) / 2);
+    }
+
+    @include respond-to('sm') {
+      flex-basis: 86%;
+      min-height: 320px;
+    }
+
+    h3 {
+      max-width: 11ch;
+      margin: $spacing-xl 0 $spacing-md;
+      @include heading-h3;
+      font-weight: $font-weight-regular;
+    }
+
+    p {
+      margin-top: $spacing-lg;
+      font-size: $font-size-base;
+      font-weight: $font-weight-semibold;
+      line-height: $line-height-relaxed;
+      color: $color-black;
+    }
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+    font-size: $font-size-base;
+    line-height: $line-height-normal;
+    color: $color-grey-600;
+  }
+
+  &__duration {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-xs;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-xl;
+    margin-top: $spacing-2xl;
+  }
+
+  &__arrow {
+    min-width: 72px;
+    padding: 0;
+    border: 0;
+    font-size: $font-size-3xl;
+    line-height: 1;
+
+    &:hover {
+      background: transparent;
+      color: $color-black;
+      transform: none;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    gap: $spacing-sm;
+    align-items: center;
+  }
+
+  &__dot {
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    border: 1px solid $color-black;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+
+    &--active {
+      background: $color-black;
+    }
+  }
+}

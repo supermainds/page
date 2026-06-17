@@ -1,0 +1,137 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.footer {
+  background: $color-white;
+  color: $color-black;
+  padding-block: 0;
+
+  @include respond-to('md') {
+    padding-bottom: 76px;
+  }
+
+  &__inner {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top {
+    background: $color-black;
+    color: rgba($color-white, 0.85);
+    display: block;
+    padding-block: $spacing-3xl $spacing-2xl;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    .footer__inner {
+      display: grid;
+      grid-template-columns: 1.5fr repeat(3, 1fr);
+      gap: $spacing-md;
+
+      @include respond-to('md') {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include respond-to('sm') {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  &__brand {
+    .footer__logo {
+      display: flex;
+      align-items: center;
+      gap: $spacing-xs;
+      color: $color-white;
+      font-weight: $font-weight-bold;
+      margin-bottom: $spacing-md;
+      img{
+        width: 327px;
+        height: 94px;
+      }
+    }
+
+    p {
+      font-size: $font-size-sm;
+      line-height: $line-height-relaxed;
+      max-width: 280px;
+    }
+  }
+
+  &__column-title {
+    color: $color-white;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: $spacing-md;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+
+    a {
+      font-size: $font-size-sm;
+      transition: color $transition-base;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__bottom {
+    padding-block: $spacing-md;
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-md;
+    flex-wrap: nowrap;
+
+    @include respond-to('sm') {
+      flex-direction: row;
+      align-items: center;
+      gap: $spacing-sm;
+      width: 100%;
+      padding-inline: 0;
+
+      .footer__inner {
+        width: 100%;
+        margin-inline: 0;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: $spacing-md;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: $spacing-xs;
+      font-size: $font-size-sm;
+      text-transform: none;
+      letter-spacing: 0;
+      color: $color-black;
+      white-space: nowrap;
+
+      img {
+        display: block;
+        width: 28px;
+        height: 28px;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}

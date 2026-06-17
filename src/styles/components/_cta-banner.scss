@@ -1,0 +1,60 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.cta-banner {
+  background: $color-primary;
+  color: $color-black;
+  text-align: center;
+
+  &.section {
+    padding-block: clamp(4rem, 8vw, 6.5rem);
+  }
+
+  &__inner {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    @include heading-h2;
+    margin-bottom: $spacing-xl;
+    color: $color-black;
+  }
+
+  &__subtitle {
+    font-size: $font-size-base;
+    line-height: $line-height-normal;
+    margin-bottom: $spacing-2xl;
+    max-width: 560px;
+    margin-inline: auto;
+    color: $color-black;
+  }
+
+  .btn {
+    min-width: 260px;
+    padding: 0.85rem 2rem;
+    border: 1px solid transparent;
+    font-size: $font-size-xs;
+    letter-spacing: 0.06em;
+
+    &:hover {
+      transform: none;
+      background: transparent;
+      color: $color-black;
+      border-color: $color-white;
+    }
+  }
+
+  @include respond-to('sm') {
+    &__title {
+      font-size: 2.75rem;
+    }
+
+    .btn {
+      width: min(100%, 280px);
+      min-width: 0;
+    }
+  }
+}

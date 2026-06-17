@@ -1,0 +1,124 @@
+{
+  "hero": {
+    "pretitle": "Nosotros",
+    "title": ["UNA ", { "highlight": "SUPERMENTE" }, " COLECTIVA."],
+    "subtitle": "En 2018, Thomas W. Malone del MIT definió una supermente como \"un grupo de individuos que actúan juntos de manera inteligente\". Las mejores empresas, gobiernos y comunidades científicas son supermentes. Nosotros creemos que cuando a esas supermentes humanas se les añade una capa de inteligencia artificial, el resultado es exponencial. Ese es el origen de supermAInds: la fusión consciente entre inteligencia humana y artificial para resolver problemas complejos.",
+    "backgroundImage": "heder_nosotros.png"
+  },
+  "story": {
+    "title": "NUESTRA HISTORIA.",
+    "paragraphs": [
+      "Nacimos de la frustración de ver proyectos de IA que prometían mucho y entregaban poco. Con +30 años de experiencia combinada en transformación digital entre nuestros fundadores, decidimos hacer las cosas diferente: menos presentaciones, más acción; menos dependencia, más transferencia; menos complejidad, más elegancia."
+    ]
+  },
+  "principles": {
+    "title": ["LOS ", { "highlight": "7 PRINCIPIOS" }, " QUE NOS DEFINEN."],
+    "items": [
+      {
+        "number": "01",
+        "title": "Nos guía un propósito superior",
+        "content": "Priorizamos lo que mueve la aguja del negocio sobre lo que impresiona en una demo."
+      },
+      {
+        "number": "02",
+        "title": "Ética y humanidad primero",
+        "content": "Las personas son más importantes que las máquinas. Siempre. Esto significa que rechazamos proyectos que deshumanizan, que eliminan empleos sin crear nuevas oportunidades, o que usan IA de manera invasiva o manipuladora. Cada solución que diseñamos pone al humano en el centro del loop, porque creemos en la inteligencia aumentada, no en la inteligencia que reemplaza."
+      },
+      {
+        "number": "03",
+        "title": "Valor en menos de 90 días",
+        "content": "Nuestro éxito se mide por la autonomía que dejamos en tu equipo."
+      },
+      {
+        "number": "04",
+        "title": "Transferencia real",
+        "content": "Comunicamos límites, riesgos y costos reales. Sin promesas mágicas."
+      },
+      {
+        "number": "05",
+        "title": "Simplicidad operativa",
+        "content": "Ciclos cortos, feedback constante y aprendizaje documentado."
+      },
+      {
+        "number": "06",
+        "title": "Transparencia radical",
+        "content": "Privacidad, seguridad y uso responsable no son un afterthought."
+      },
+      {
+        "number": "07",
+        "title": "Ecosistema para escalar",
+        "content": "Co-creamos con tu equipo. No somos una caja negra externa."
+      }
+    ]
+  },
+  "team": {
+    "title": "LAS MENTES QUE NOS LIDERAN Y NOS DESAFÍAN.",
+    "members": [
+      {
+        "name": "César Trujillo",
+        "role": "Founder & CEO",
+        "bio": "Con tres décadas navegando entre el arte y la tecnología, César ha visto todas las olas de innovación digital desde dentro. Ex-VP Digital de JWT y Managing Director de Studiocom Latam, combina rigor estratégico con creatividad aplicada. Su obsesión: que la IA sirva a los humanos, no al revés. Candidato doctoral en AI & ML por Walsh College, trae al equipo una mezcla única de visión de negocio y profundidad técnica.",
+        "image": "cesar_trujillo.png",
+        "reverse": false
+      },
+      {
+        "name": "Lina Echeverri",
+        "role": "Estrategia y marca con propósito",
+        "bio": "PhD en Desarrollo Económico y Top Voice LATAM en Branding, Lina es la voz que nos recuerda que detrás de cada algoritmo hay una persona. Directora del GSB en Universidad del Rosario, ha transformado la educación ejecutiva en Colombia conectando academia y empresa. Su superpoder: traducir complejidad en narrativas que inspiran acción. Con más de 25 reconocimientos internacionales, aporta al board una visión humanista indispensable para construir IA ética.",
+        "image": "lina_echeverri.png",
+        "reverse": true
+      },
+      {
+        "name": "Ricardo Nates",
+        "role": "Gobierno corporativo y estructura legal",
+        "bio": "Abogado transaccional con 23 años estructurando deals complejos entre Colombia, USA y República Dominicana. Ricardo es nuestro arquitecto de confianza: diseña las estructuras legales y de gobierno que permiten escalar sin perder agilidad. Ha participado en más de 1,000 fideicomisos y cerrado operaciones en 8 países. Su rol en el board: asegurar que innovemos rápido pero con fundamentos sólidos.",
+        "image": "ricardo_nates.png",
+        "reverse": false
+      },
+      {
+        "name": "Andrés Gómez",
+        "role": "Crisis, reputación y ejecución",
+        "bio": "Cuando las cosas se ponen difíciles, Andrés es quien quieres en tu esquina. Fundador de Laberinto y ex-Senior Managing Director de FTI Consulting, ha guiado a CEOs y Juntas Directivas a través de las crisis más complejas de la región. Su filosofía: la mejor estrategia sin ejecución es solo ruido. Aporta al board dos décadas de experiencia en situaciones de alta presión.",
+        "image": "andres_gomez.png",
+        "reverse": true
+      }
+    ]
+  },
+  "ecosystem": {
+    "title": ["UN ECOSISTEMA PARA ESCALAR ", { "highlight": "CON CONFIANZA." }],
+    "description": "Creemos en la especialización profunda. Por eso construimos un ecosistema de partners best-in-class en lugar de pretender hacerlo todo internamente.",
+    "partners": [
+      {
+        "name": "Soho",
+        "logo": "soho.png",
+        "description": "28 años de experiencia de negocios digitales, impulsados por una visión Business First."
+      },
+      {
+        "name": "TrendValue",
+        "logo": "trendvalue.png",
+        "description": "Utiliza la IA para empoderar a las marcas a escuchar mejor, responder con mayor rapidez y conectar más profundamente con AI."
+      },
+      {
+        "name": "Oriya",
+        "logo": "oriya.png",
+        "description": "Co-diseño e integración de soluciones de estructuración de IA y data para acelerar implementación empresaria. Modelos con Machine Learning y algoritmos bayesianos."
+      },
+      {
+        "name": "Machina & Partners",
+        "logo": "machina.png",
+        "description": "Estudio creativo impulsado por IA. Combina lo mejor de IA Generativa produciendo piezas de video creativo de alta calidad, con tiempos récord y ahorro en presupuestos."
+      },
+      {
+        "name": "Got It",
+        "logo": "gotit.png",
+        "description": "Mentes creativas que convierten ideas fuertes en realidad. Experiencias visuales de alto impacto para televisión, creadores de contenidos digitales y corporativos."
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para potenciar tu equipo con IA?",
+    "subtitle": "Conversemos sobre cómo podemos ayudarte a lograr resultados en menos de 90 días.",
+    "buttonText": "Agendar conversación",
+    "buttonPath": "/#contacto"
+  }
+}

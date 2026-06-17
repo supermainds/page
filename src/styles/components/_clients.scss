@@ -1,0 +1,32 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.split-text {
+  background: $color-grey-100;
+
+  &__inner {
+    @include container-wide;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: $spacing-2xl;
+    align-items: end;
+
+    @include respond-to('md') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid;
+  }
+
+  &__text {
+    font-size: $font-size-base;
+    line-height: $line-height-relaxed;
+    color: $color-black;
+  }
+}

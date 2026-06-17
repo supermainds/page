@@ -1,0 +1,42 @@
+{
+  "brand": {
+    "name": "supermAInds",
+    "tagline": "AI para humanos. Impacto en menos de 90 días. Acelerador de IA humana y ética para Latam.",
+    "address": "Bogotá, Colombia",
+    "email": "cesar@supermainds.com",
+    "phone": "+57 300 000 0000"
+  },
+  "navigation": [
+    { "label": "Inicio", "path": "/" },
+    { "label": "Soluciones", "path": "/soluciones" },
+    { "label": "The Lab + Academia", "path": "/the-lab" },
+    { "label": "Nosotros", "path": "/nosotros" }
+  ],
+  "footer": {
+    "solutions": [
+      { "label": "AI Consulting & Upskilling", "path": "/soluciones" },
+      { "label": "Agentes AI & Automatización", "path": "/soluciones" },
+      { "label": "Productos AI-first", "path": "/soluciones" }
+    ],
+    "company": [
+      { "label": "Nosotros", "path": "/nosotros" },
+      { "label": "The Lab", "path": "/the-lab" },
+      { "label": "Contacto", "path": "/#contacto" }
+    ],
+    "legal": [
+      { "label": "Privacidad", "path": "/legal/privacidad" },
+      { "label": "Cookies", "path": "/legal/cookies" },
+      { "label": "Términos", "path": "/legal/terminos" }
+    ],
+    "social": [
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/company/supermainds/" }
+    ],
+    "copyright": "© 2026 supermAInds. Todos los derechos reservados."
+  },
+  "cta": {
+    "title": "¿Listo para comenzar?",
+    "subtitle": "Cuéntanos tu desafío y te proponemos la mejor ruta para resolverlo.",
+    "buttonText": "Agendar conversación",
+    "buttonPath": "/#contacto"
+  }
+}

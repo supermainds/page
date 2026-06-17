@@ -1,0 +1,232 @@
+{
+  "hero": {
+    "pretitle": "Soluciones",
+    "title": ["DE LA IDEA AL ", { "highlight": "VALOR MEDIBLE." }],
+    "subtitle": "Tres rutas claras para avanzar hoy.",
+    "backgroundImage": "header_soluciones.png"
+  },
+  "services": [
+    {
+      "icon": "lightbulb",
+      "title": "AI Consulting & Upskilling",
+      "description": "Estrategia de IA que tu equipo puede ejecutar",
+      "meta": {
+        "timeline": { "icon": "clock", "text": "2-12 semanas" },
+        "list": [
+          "Roadmap priorizado",
+          "Framework de gobernanza",
+          "Programas de upskilling",
+          "Plan de adopción"
+        ],
+        "efficiency": "Madurez AI +40% en 90 días",
+        "cta": { "text": "Ver más", "link": "/soluciones#estrategia" }
+      }
+    },
+    {
+      "icon": "robot",
+      "title": "Agentic AI & Automatización",
+      "description": "Agentes que trabajan. En serio.",
+      "meta": {
+        "timeline": { "icon": "clock", "text": "8-12 semanas" },
+        "list": [
+          "Agentes especializados",
+          "Integraciones con sistemas",
+          "Dashboards de performance",
+          "Documentación completa"
+        ],
+        "efficiency": "Eficiencia +85% en tareas automatizadas",
+        "cta": { "text": "Ver más", "link": "/soluciones#agentes" }
+      }
+    },
+    {
+      "icon": "cube",
+      "title": "Negocios, Productos y Servicios AI-First",
+      "description": "De la idea al MVP en 12 semanas",
+      "meta": {
+        "timeline": { "icon": "clock", "text": "12 semanas" },
+        "list": [
+          "Business case validado",
+          "MVP funcional",
+          "Arquitectura escalable",
+          "Plan de iteración"
+        ],
+        "efficiency": "Time-to-market 3x más rápido",
+        "cta": { "text": "Ver más", "link": "/soluciones#mvp" }
+      }
+    }
+  ],
+  
+  "strategy": {
+    "pretitle": "AI Consulting & Upskilling",
+    "icon": "bombillo_black.svg",
+    "backgroundImage": "estrategia.png",
+    "title": ["ESTRATEGIA DE IA", { "break": true }, "QUE ", { "highlight": "TU EQUIPO" }, { "break": true }, { "highlight": "PUEDE EJECUTAR." }],
+    "intro": "La IA no es un proyecto de IT. Es una capacidad organizacional que requiere estrategia, gobernanza y, sobre todo, personas preparadas. Te acompañamos en todo el journey.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&q=80",
+    "items": [
+      {
+        "title": "Assessment de Madurez AI",
+        "weeks": "2",
+        "list": [
+          "Evaluamos tu estado actual vs. mejores prácticas",
+          "Identificamos brechas y oportunidades",
+          "Entregamos roadmap priorizado de 30-60-90 días"
+        ]
+      },
+      {
+        "title": "Diseño de Gobernanza",
+        "weeks": "3-4",
+        "list": [
+          "Creamos tu framework de ética y uso responsable",
+          "Establecemos comités y roles de supervisión",
+          "Definimos políticas de datos y privacidad"
+        ]
+      },
+      {
+        "title": "Upskilling Ejecutivo",
+        "weeks": "4-8",
+        "list": [
+          "Programas para C-Suite y Juntas Directivas",
+          "Workshops hands-on con herramientas reales",
+          "Certificación 'AI Leadership' para tu equipo"
+        ]
+      },
+      {
+        "title": "Change Management",
+        "weeks": "8-12",
+        "list": [
+          "Estrategia de adopción por audiencias",
+          "Pilotos controlados con early adopters",
+          "Medición de adopción y ajustes"
+        ]
+      }
+    ]
+  },
+  "whatNot": {
+    "title": "LO QUE NO HACEMOS",
+    "items": [
+      "Reportes de 200 páginas que nadie lee.",
+      "Recomendaciones imposibles de implementar.",
+      "Dependencia permanente de consultores."
+    ]
+    ,"cta": { "text": "Solicitar diagnóstico de madurez de IA", "link": "/#contacto" }
+  },
+  "agents": {
+    "title": ["AGENTES QUE", { "break": true }, "TRABAJAN.", { "break": true }, { "highlight": "EN SERIO." }],
+    "pretitle": "Agentic AI & Automatización",
+    "description": "Diseñamos, entrenamos y operamos agentes de IA que resuelven tareas reales de negocio. No hacemos chatbots genéricos: creamos automatizaciones y agentes especializados que entienden tu contexto, acceden a tus sistemas y ejecutan con precisión.",
+    "how": [
+      {
+        "number": "01",
+        "weeks": "1-2",
+        "title": "Discovery & Mapeo",
+        "list": [
+          "Analizamos tus flujos de trabajo actuales",
+          "Identificamos tareas automatizables con mayor ROI",
+          "Priorizamos quick wins vs. transformación profunda"
+        ]
+      },
+      {
+        "number": "02",
+        "weeks": "3-4",
+        "title": "Diseño & Prototipado",
+        "list": [
+          "Creamos prompts especializados para tu industria",
+          "Integramos con tus herramientas (CRM, ERP, etc.)",
+          "Construimos sandboxes seguros para pruebas"
+        ]
+      },
+      {
+        "number": "03",
+        "weeks": "5-8",
+        "title": "Implementación & Monitoreo",
+        "list": [
+          "Desplegamos agentes en producción controlada",
+          "Establecemos KPIs y dashboards de performance",
+          "Ajustamos basados en feedback real" 
+        ]
+      },
+      {
+        "number": "04",
+        "weeks": "9-12",
+        "title": "Escalamiento & Transferencia",
+        "list": [
+          "Expandimos a más casos de uso",
+          "Entrenamos a tu equipo para operar",
+          "Documentamos todo para sostenibilidad"
+        ]
+      }
+    ],
+    "cases": [
+      "Back-office copilots para conciliación y reporte",
+      "Agent Factory para discovery y afinación de modelos",
+      "Infra & salvaguardas con control de versiones",
+      "Agent-as-a-Service con mejora continua"
+    ],
+    "image": "agentes.png",
+    "cta": { "text": "Agendar demo de 15 minutos", "link": "/#contacto" }
+  },
+  "mvp": {
+    "pretitle": "Modelos de negocio, productos & servicios AI-first",
+    "title": ["DE LA IDEA", { "break": true }, "AL MVP", { "break": true }, { "highlight": "EN 12 SEMANAS." }],
+    "description": "Co-creamos modelos de negocio, productos y servicios digitales que nacen con IA en su core. No agregamos IA a productos existentes: diseñamos experiencias nativas de IA desde el día uno.",
+    "icon": "caja_black.svg",
+    "image": "mvp.png",
+    "processTitle": "Nuestro proceso:",
+    "steps": [
+      {
+        "weeks": "2",
+        "sprint": "Sprint 0:",
+        "title": "Discovery",
+        "items": [
+          "Product-market fit con lente de IA",
+          "Análisis de viabilidad técnica y ética",
+          "Business case y métricas de éxito"
+        ]
+      },
+      {
+        "weeks": "4",
+        "sprint": "Sprint 1-2:",
+        "title": "Diseño",
+        "items": [
+          "Experiencia de usuario AI-native",
+          "Arquitectura de datos y modelos",
+          "Prototipo funcional para testing"
+        ]
+      },
+      {
+        "weeks": "4",
+        "sprint": "Sprint 3-4:",
+        "title": "Construcción",
+        "items": [
+          "Desarrollo del MVP core",
+          "Integraciones con APIs y servicios",
+          "Testing con usuarios reales"
+        ]
+      },
+      {
+        "weeks": "2",
+        "sprint": "Sprint 5:",
+        "title": "Lanzamiento",
+        "items": [
+          "Deployment y monitoreo",
+          "Onboarding de primeros usuarios",
+          "Plan de iteración post-launch"
+        ]
+      }
+    ],
+    "products": {
+      "title": "Tipos de productos que construimos:",
+      "items": [
+        "Asistentes especializados por industria",
+        "Herramientas de productividad aumentada",
+        "Plataformas de análisis predictivo",
+        "Experiencias conversacionales avanzadas"
+      ],
+      "cta": {
+        "text": "Agenda una llamada de 30 minutos",
+        "link": "/#contacto"
+      }
+    }
+  }
+}

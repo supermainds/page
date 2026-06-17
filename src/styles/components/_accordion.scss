@@ -1,0 +1,80 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.accordion {
+  @include container;
+  margin-top: 0;
+  border-top: 1px solid $color-grey-400;
+
+  &__item {
+    border-bottom: 1px solid $color-grey-400;
+  }
+
+  &__trigger {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: $spacing-lg;
+    align-items: baseline;
+    padding-block: $spacing-md;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    color: $color-black;
+    @include focus-ring;
+
+    &:hover .accordion__title {
+      color: $color-black;
+    }
+  }
+
+  &__number {
+    font-size: $font-size-3xl;
+    font-weight: $font-weight-light;
+    line-height: 1;
+    color: $color-grey-600;
+  }
+
+  &__title {
+    @include heading-h4;
+    font-weight: $font-weight-regular;
+    text-transform: none;
+    transition: color $transition-base;
+  }
+
+  &__icon {
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-regular;
+    line-height: 1;
+    color: $color-grey-600;
+  }
+
+  &__panel {
+    max-width: 90%;
+    padding: 0 $spacing-lg $spacing-lg calc(80px + #{$spacing-lg});
+    font-size: $font-size-sm;
+    line-height: $line-height-relaxed;
+    color: $color-black;
+
+    @include respond-to('sm') {
+      padding-left: 0;
+    }
+  }
+
+  @include respond-to('sm') {
+    &__trigger {
+      grid-template-columns: 52px 1fr auto;
+      gap: $spacing-sm;
+    }
+
+    &__number,
+    &__icon {
+      font-size: $font-size-xl;
+    }
+
+    &__title {
+      font-size: $font-size-2xl;
+    }
+  }
+}

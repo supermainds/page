@@ -1,0 +1,85 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: $spacing-lg;
+  color: $color-white;
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba($color-black, 0) 20%,
+        rgba($color-black, 0.72) 100%
+      );
+    }
+  }
+
+  &:hover &__bg {
+    transform: scale(1.05);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__number {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__title {
+    @include heading-h3;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__description {
+    font-size: $font-size-base;
+    line-height: $line-height-relaxed;
+    color: rgba($color-white, 0.85);
+  }
+
+  &--light {
+    background: $color-grey-100;
+    color: $color-black;
+    min-height: auto;
+    padding: $spacing-lg;
+
+    .feature-card__title {
+      @include heading-h5;
+      margin-bottom: $spacing-sm;
+    }
+
+    .feature-card__description {
+      color: $color-grey-600;
+    }
+  }
+}
+
+.features-grid {
+  @include container;
+  @include grid-columns(3, $spacing-lg);
+  margin-top: $spacing-2xl;
+
+  @include respond-to('md') {
+    grid-template-columns: 1fr;
+  }
+}
