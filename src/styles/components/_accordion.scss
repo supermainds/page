@@ -63,9 +63,12 @@
   }
 
   @include respond-to('sm') {
+    width: 100%;
+
     &__trigger {
-      grid-template-columns: 52px 1fr auto;
-      gap: $spacing-sm;
+      grid-template-columns: 28px minmax(0, 1fr) auto;
+      gap: $spacing-md;
+      padding-block: $spacing-md;
     }
 
     &__number,
@@ -74,7 +77,13 @@
     }
 
     &__title {
-      font-size: $font-size-2xl;
+      font-size: 1.25rem;
+      line-height: 1.15;
+    }
+
+    &__panel {
+      max-width: 100%;
+      padding: 1rem 0rem;
     }
   }
 }
