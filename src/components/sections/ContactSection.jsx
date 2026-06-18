@@ -20,23 +20,30 @@ export default function ContactSection({ data }) {
     e.preventDefault()
 
     const formData = new FormData(e.currentTarget)
+    const name = formData.get('name')
+    const email = formData.get('email')
     const payload = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      company: formData.get('company'),
-      message: formData.get('message'),
-      contactPreference: interests.join(', '),
+      Nombre: name,
+      Email: email,
+      Teléfono: formData.get('phone'),
+      Empresa: formData.get('company'),
+      'Reto principal': formData.get('message'),
+      'Preferencia de contacto': interests.join(', '),
+      _replyto: email,
+      _subject: `Nuevo contacto desde supermAInds: ${name}`,
+      _template: 'table',
+      _captcha: 'false',
     }
 
     setIsSubmitting(true)
     setError('')
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://formsubmit.co/ajax/cesar@supermainds.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          Accept: 'application/json',
         },
         body: JSON.stringify(payload),
       })

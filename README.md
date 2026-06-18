@@ -27,16 +27,9 @@ npm run preview
 
 ## Formulario de contacto
 
-El formulario envía los mensajes a `cesar@supermainds.com` usando la función serverless `api/contact.js`.
+El formulario envía los mensajes a `cesar@supermainds.com` usando FormSubmit.
 
-Configura estas variables de entorno en Vercel:
-
-```bash
-RESEND_API_KEY=...
-CONTACT_FROM_EMAIL=supermAInds <cesar@supermainds.com>
-```
-
-`CONTACT_FROM_EMAIL` debe usar un dominio verificado en Resend. Si necesitas cambiar el destinatario, puedes agregar `CONTACT_TO_EMAIL`.
+La primera vez que se envíe el formulario, FormSubmit puede mandar un correo de activación a `cesar@supermainds.com`. Hay que confirmar ese correo para habilitar la recepción de mensajes.
 
 ## Rutas
 
