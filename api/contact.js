@@ -34,7 +34,7 @@ export default async function handler(req, res) {
   }
 
   const to = process.env.CONTACT_TO_EMAIL || CONTACT_TO_EMAIL
-  const from = process.env.CONTACT_FROM_EMAIL || 'supermAInds <onboarding@resend.dev>'
+  const from = process.env.CONTACT_FROM_EMAIL || 'supermAInds <cesar@supermainds.com>'
   const subject = `Nuevo contacto desde supermAInds: ${cleaned.name}`
   const text = [
     `Nombre: ${cleaned.name}`,
