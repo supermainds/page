@@ -23,6 +23,7 @@ export default function ContactSection({ data }) {
     const payload = {
       name: formData.get('name'),
       email: formData.get('email'),
+      phone: formData.get('phone'),
       company: formData.get('company'),
       message: formData.get('message'),
       contactPreference: interests.join(', '),
@@ -87,13 +88,17 @@ export default function ContactSection({ data }) {
           <form className="contact__form" onSubmit={handleSubmit}>
             <div className="contact__field">
               <div className="contact__field">
-                <label htmlFor="name">NO</label>
+                <label htmlFor="name">NOMBRE</label>
                 <input id="name" name="name" type="text" required placeholder="Tu nombre" />
               </div>
               <div className="contact__field">
                 <label htmlFor="email">EMAIL CORPORATIVO</label>
                 <input id="email" name="email" type="email" required placeholder="tu@email.com" />
               </div>
+            </div>
+            <div className="contact__field">
+              <label htmlFor="phone">TELÉFONO</label>
+              <input id="phone" name="phone" type="tel" placeholder="Tu número telefónico" />
             </div>
             <div className="contact__field">
               <label htmlFor="company">EMPRESA</label>
@@ -104,7 +109,7 @@ export default function ContactSection({ data }) {
               <textarea id="message" name="message" required placeholder="Cuéntanos tu reto..." />
             </div>
             <div className="contact__interests">
-              <label>¿CÓMO PREFIERES QUE TE CONTECTEMOS?</label>
+              <label>¿CÓMO PREFIERES QUE TE CONTACTEMOS?</label>
               <div className="contact__chips">
                 {data.interests.map((interest) => (
                   <button

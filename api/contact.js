@@ -16,10 +16,11 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { name, email, company, message, contactPreference } = req.body || {}
+  const { name, email, phone, company, message, contactPreference } = req.body || {}
   const cleaned = {
     name: cleanValue(name),
     email: cleanValue(email),
+    phone: cleanValue(phone),
     company: cleanValue(company),
     message: cleanValue(message),
     contactPreference: cleanValue(contactPreference),
@@ -39,6 +40,7 @@ export default async function handler(req, res) {
   const text = [
     `Nombre: ${cleaned.name}`,
     `Email: ${cleaned.email}`,
+    `Teléfono: ${cleaned.phone || 'No especificado'}`,
     `Empresa: ${cleaned.company || 'No especificada'}`,
     `Preferencia de contacto: ${cleaned.contactPreference || 'No especificada'}`,
     '',
@@ -49,6 +51,7 @@ export default async function handler(req, res) {
     <h2>Nuevo mensaje desde el formulario de supermAInds</h2>
     <p><strong>Nombre:</strong> ${escapeHtml(cleaned.name)}</p>
     <p><strong>Email:</strong> ${escapeHtml(cleaned.email)}</p>
+    <p><strong>Teléfono:</strong> ${escapeHtml(cleaned.phone || 'No especificado')}</p>
     <p><strong>Empresa:</strong> ${escapeHtml(cleaned.company || 'No especificada')}</p>
     <p><strong>Preferencia de contacto:</strong> ${escapeHtml(cleaned.contactPreference || 'No especificada')}</p>
     <p><strong>Reto principal:</strong></p>
