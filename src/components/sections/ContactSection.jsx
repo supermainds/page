@@ -7,6 +7,8 @@ export default function ContactSection({ data }) {
   const { brand } = siteData
   const [interests, setInterests] = useState([])
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState('')
 
   const toggleInterest = (interest) => {
     setInterests((prev) =>
@@ -14,9 +16,40 @@ export default function ContactSection({ data }) {
     )
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
+
+    const formData = new FormData(e.currentTarget)
+    const payload = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      company: formData.get('company'),
+      message: formData.get('message'),
+      contactPreference: interests.join(', '),
+    }
+
+    setIsSubmitting(true)
+    setError('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      })
+
+      if (!response.ok) {
+        throw new Error('No se pudo enviar el mensaje')
+      }
+
+      setSubmitted(true)
+    } catch {
+      setError('No pudimos enviar tu mensaje. Intenta de nuevo o escríbenos directamente al correo.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -85,8 +118,9 @@ export default function ContactSection({ data }) {
                 ))}
               </div>
             </div>
-            <Button type="submit" variant="white" size="lg" block>
-              {data.submitText}
+            {error && <p className="contact__error">{error}</p>}
+            <Button type="submit" variant="white" size="lg" block disabled={isSubmitting}>
+              {isSubmitting ? 'Enviando...' : data.submitText}
             </Button>
           </form>
         )}

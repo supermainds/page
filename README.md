@@ -25,6 +25,19 @@ npm run build
 npm run preview
 ```
 
+## Formulario de contacto
+
+El formulario envía los mensajes a `cesar@supermainds.com` usando la función serverless `api/contact.js`.
+
+Configura estas variables de entorno en Vercel:
+
+```bash
+RESEND_API_KEY=...
+CONTACT_FROM_EMAIL=supermAInds <contacto@supermainds.com>
+```
+
+`CONTACT_FROM_EMAIL` debe usar un dominio verificado en Resend. Si necesitas cambiar el destinatario, puedes agregar `CONTACT_TO_EMAIL`.
+
 ## Rutas
 
 | Ruta | Página |

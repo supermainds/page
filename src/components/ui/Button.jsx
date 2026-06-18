@@ -10,6 +10,7 @@ export default function Button({
   className = '',
   onClick,
   block = false,
+  disabled = false,
 }) {
   const classes = [
     'btn',
@@ -38,7 +39,7 @@ export default function Button({
   }
 
   return (
-    <button type={type} className={classes} onClick={onClick}>
+    <button type={type} className={classes} onClick={onClick} disabled={disabled}>
       {children}
     </button>
   )
