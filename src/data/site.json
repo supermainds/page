@@ -14,9 +14,9 @@
   ],
   "footer": {
     "solutions": [
-      { "label": "AI Consulting & Upskilling", "path": "/soluciones" },
-      { "label": "Agentes AI & Automatización", "path": "/soluciones" },
-      { "label": "Productos AI-first", "path": "/soluciones" }
+      { "label": "AI Consulting & Upskilling", "path": "https://www.supermainds.com/soluciones#estrategia" },
+      { "label": "Agentic AI & Automatización", "path": "https://www.supermainds.com/soluciones#agentes" },
+      { "label": "Productos AI-first", "path": "https://www.supermainds.com/soluciones#mvp" }
     ],
     "company": [
       { "label": "Nosotros", "path": "/nosotros" },
