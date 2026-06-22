@@ -63,21 +63,21 @@
       },
       {
         "name": "Lina Echeverri",
-        "role": "Estrategia y marca con propósito",
+        "role": "Board Advisor – Estrategia y marca con propósito",
         "bio": "PhD en Desarrollo Económico y Top Voice LATAM en Branding, Lina es la voz que nos recuerda que detrás de cada algoritmo hay una persona. Directora del GSB en Universidad del Rosario, ha transformado la educación ejecutiva en Colombia conectando academia y empresa. Su superpoder: traducir complejidad en narrativas que inspiran acción. Con más de 25 reconocimientos internacionales, aporta al board una visión humanista indispensable para construir IA ética.",
         "image": "lina_echeverri.png",
         "reverse": true
       },
       {
         "name": "Ricardo Nates",
-        "role": "Gobierno corporativo y estructura legal",
+        "role": "Board Advisor – Gobierno corporativo y estructura legal",
         "bio": "Abogado transaccional con 23 años estructurando deals complejos entre Colombia, USA y República Dominicana. Ricardo es nuestro arquitecto de confianza: diseña las estructuras legales y de gobierno que permiten escalar sin perder agilidad. Ha participado en más de 1,000 fideicomisos y cerrado operaciones en 8 países. Su rol en el board: asegurar que innovemos rápido pero con fundamentos sólidos.",
         "image": "ricardo_nates.png",
         "reverse": false
       },
       {
         "name": "Andrés Gómez",
-        "role": "Crisis, reputación y ejecución",
+        "role": "Board Advisor – Crisis, reputación y ejecución",
         "bio": "Cuando las cosas se ponen difíciles, Andrés es quien quieres en tu esquina. Fundador de Laberinto y ex-Senior Managing Director de FTI Consulting, ha guiado a CEOs y Juntas Directivas a través de las crisis más complejas de la región. Su filosofía: la mejor estrategia sin ejecución es solo ruido. Aporta al board dos décadas de experiencia en situaciones de alta presión.",
         "image": "andres_gomez.png",
         "reverse": true
